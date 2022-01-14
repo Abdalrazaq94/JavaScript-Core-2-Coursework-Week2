@@ -1,5 +1,19 @@
 function shoppingList(arrayOfPeople) {
-  // Write your code here...
+
+shopping.forEach(function (element) {
+
+
+  let doc = document.querySelector('div')
+
+  let shop = document.createElement('ul')
+  shop.innerHTML = `<li>${element}</li>`
+
+  
+  
+
+  doc.append(shop)
+})
+
 }
 
 let shopping = ["Milk", "Bread", "Eggs", "A Dinosaur", "Cake", "Sugar", "Tea"];

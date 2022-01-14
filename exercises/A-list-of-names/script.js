@@ -4,17 +4,28 @@ let people = [
   { name: "Boris", job: "Prime Minister" },
 ];
 
-listOfNames(people);
+
 
 function listOfNames(arrayOfPeople) {
-  let content = document.querySelector("#content");
-  let names = document.createElement('h1')
-  let job = document.createElement('h1')
-  content.innerHTML = names 
-  names.innerText = people[0].name
-  
- 
- 
 
-}
+  people.forEach(function (element) {
+    let div = document.querySelector('div');
 
+    let names = document.createElement('h1').innerHTML = element.name;
+    let jobs  = document.createElement('h1').innerHTML = element.job;
+
+    div.append(
+
+    ` names is :${names}
+    jobs is : ${jobs}
+    `  
+    )
+
+    
+  })
+
+  }
+
+
+
+listOfNames(people);
