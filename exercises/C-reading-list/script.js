@@ -1,16 +1,30 @@
 function readingList(books) {
    let dom = document.querySelector('div')
-   let df = document.createDocumentFragment()
-
-
-   let div = document.createElement('div').style.color = green
-   let ul = document.createElement('ul')
+ 
+  //  - Iterate through the list of books.
+  //  - For each book, create a `<p>` element with the book title and author and append it to the page.
+  //  - Use a `<ul>` and `<li>` to display the books.
+  //  - Add an `<img>` to each book that links to a URL of the book cover.
+  //  - Change the style of the book depending on whether you have read it (green) or not (red).
+  //  - All of your HTML should go inside the `<div>` with the id **"content"**.
    
-   ul.innerHTML = `<li>${books.title}</li>`
+    array.forEach(element => {
+      let p = document.createElement('p')
+      let au = document.createElement('p')
 
-  df.appendChild(div)
-  df.appendChild(ul)
-  dom.appendChild(df)
+      p.innerHTML = element.title
+      au.innerHTML = element.author
+
+      
+    });
+
+
+   
+
+
+
+
+
 }
 
 const books = [

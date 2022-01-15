@@ -1,6 +1,22 @@
 function todoList(todos) {
-  // Write your code here...
+ 
+  
+  todos.forEach(function (element) {
+
+
+    let doc = document.querySelector('div')
+  
+    let shop = document.createElement('li')
+    shop.innerHTML = `<a>${element.todo}<a/>`
+  
+    
+    
+  
+    doc.append(shop)
+  })
+
 }
+
 
 const todos = [
   {todo: "wash the dishes"}, 
