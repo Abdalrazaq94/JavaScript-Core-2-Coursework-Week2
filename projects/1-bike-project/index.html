@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE >
 <html lang="en_US">
 	<head>
 		<title>Bikes for Refugees | Scotland</title>
@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="styles/style.css">
+		
 	</head>
 	<body>
 		<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -56,8 +57,8 @@
 						<p class="lead">Providing donated bikes and accessories to refugees and asylum seekers in Scotland.</p>
 						<hr class="my-4">
 						<div class="buttons">
-							<a class="btn btn-primary btn-lrg" href="#">Donate a bike today</a>
-							<a class="btn btn-secondary btn-lrg" href="#">Volunteer</a>
+							<a id="donate" class="btn btn-primary btn-lrg" href="#">Donate a bike today</a>
+							<a  id="volunteer" class="btn btn-secondary btn-lrg" href="#">Volunteer</a>
 						</div>
 					</div>
 					<button id="blueBtn" type="button" class="btn btn-primary colorButton">Blue</button>
@@ -65,7 +66,8 @@
 					<button id="greenBtn" type="button" class="btn btn-primary colorButton">Green</button>
 					<br>
 					<h3>Register with us today:</h3>
-					<form >
+
+					<form id="form">
 						<div class="form-group">
 							<label for="exampleInputEmail1">Email address</label>
 							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -73,14 +75,15 @@
 						</div>
 						<div class="form-group">
 							<label for="example-text-input">Your name</label>
-							<input class="form-control" type="text" value="" id="example-text-input">
+							<input class="form-control" type="text" value="" id="example-text-input" >
 						</div>
 						<div class="form-group">
 							<label for="exampleTextarea">Describe yourself</label>
 							<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button id="sub" type="submit" class="btn btn-primary">Submit</button>
 						</form>
+
 					<h2 class="heading-underline">Learn more</h2>
 					<div class="articles">
 						<article class="article">
@@ -148,10 +151,12 @@
 				</div>
 			</div>
 		</div>
+  <script> 
 
+</script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-		<script src="./js/main.js"></script>
+		<script src="./js/main.js" defer></script>
 	</body>
 </html>
